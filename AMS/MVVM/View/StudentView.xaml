@@ -1,0 +1,28 @@
+﻿<Window x:Class="AMS.StudentVIews.StudentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AMS.StudentVIews"
+        mc:Ignorable="d"
+        Title="StudentView" Height="450" Width="400" Background="#272550">
+    <Grid>
+        <DataGrid Name="StudentDataGrid" 
+                  AutoGenerateColumns="True" 
+                  Margin="0,0,0,61"/>
+        <Button x:Name="GoBackBtn"
+            Content="Go Back" 
+            HorizontalAlignment="Center" 
+            Margin="0,392,0,0" 
+            VerticalAlignment="Top" Height="32" 
+            Width="80"
+            Background="#353340" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>

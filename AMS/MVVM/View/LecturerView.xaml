@@ -1,0 +1,108 @@
+﻿<Window x:Class="AMS.LecturerViews.LecturerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AMS.LecturerViews"
+        mc:Ignorable="d"
+        Title="LecturerView" Height="450" Width="400"
+        Background="#272550">
+    <Grid>
+        <DataGrid x:Name="StudentDataGrid" 
+            AutoGenerateColumns="True" Margin="0,0,0,205"/>
+
+        <Button x:Name="SaveButton"
+            Content="Save" 
+            HorizontalAlignment="Left" 
+            Margin="251,257,0,0" 
+            VerticalAlignment="Top" Height="24" 
+            Width="56" Click="SaveButton_Click"
+            Background="#353340" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Updatebutton"
+            Content="Update" 
+            HorizontalAlignment="Left" 
+            Margin="251,297,0,0" 
+            VerticalAlignment="Top" Height="24" 
+            Width="56" Click="Updatebutton_Click"
+            Background="#353340" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="DeleteButton"
+            Content="Delete" 
+            HorizontalAlignment="Left" 
+            Margin="251,336,0,0" 
+            VerticalAlignment="Top" Height="24" 
+            Width="56" Click="DeleteButton_Click"
+            Background="#353340" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBox x:Name="studentID"
+            HorizontalAlignment="Left" 
+            Margin="102,260,0,0" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+        <TextBox x:Name="gradeID"
+            HorizontalAlignment="Left" 
+            Margin="102,300,0,0" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+
+        <Label Content="Student ID" 
+            HorizontalAlignment="Left" 
+            Margin="102,234,0,0" VerticalAlignment="Top"
+            Foreground="White"/>
+        <Label Content="Grade ID" 
+            HorizontalAlignment="Left" 
+            Margin="102,274,0,0" VerticalAlignment="Top"
+            Foreground="White"/>
+
+        <TextBox x:Name="IdTbx"
+            HorizontalAlignment="Left" 
+            Margin="102,339,0,0" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+
+        <Label Content="Aditional info" 
+            HorizontalAlignment="Left" 
+            Margin="102,316,0,0" VerticalAlignment="Top"
+            Foreground="White"/>
+        <Button x:Name="GoBackBtn"
+            Content="Go Back" 
+            HorizontalAlignment="Left" 
+            Margin="169,383,0,0" 
+            VerticalAlignment="Top" Height="32" 
+            Width="80"
+            Background="#353340" Foreground="White" Click="GoBackBtn_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="IDc"
+            HorizontalAlignment="Left" 
+            Margin="24,300,0,0" 
+            VerticalAlignment="Top" 
+            Width="46"/>
+        <Label Content="ID" 
+            HorizontalAlignment="Left" 
+            Margin="24,269,0,0" VerticalAlignment="Top"
+            Foreground="White"/>
+
+    </Grid>
+</Window>
